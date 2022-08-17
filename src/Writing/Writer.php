@@ -260,7 +260,11 @@ class Writer
         $publicPath = $this->config->get('output_folder') ?? 'public/docs';
         if (! is_dir($publicPath)) {
             mkdir($publicPath, 0777, true);
+        }
+        if (! is_dir($publicPath.'/css')) {
             mkdir("{$publicPath}/css");
+        }
+        if (! is_dir($publicPath.'/js')) {
             mkdir("{$publicPath}/js");
         }
         copy("{$this->sourceOutputPath}/js/all.js", "{$publicPath}/js/all.js");
