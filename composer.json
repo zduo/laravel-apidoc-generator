@@ -14,6 +14,12 @@
             "email": "m.pociot@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/zduo/documentarian.git"
+        }
+    ],
     "require": {
         "php": ">=7.2.0",
         "ext-json": "*",
@@ -22,7 +28,7 @@
         "illuminate/routing": "^5.7|^6.0|^7.0|^8.0|^9.0",
         "illuminate/support": "^5.7|^6.0|^7.0|^8.0|^9.0",
         "league/flysystem": "^1.0|^3.0",
-        "zduo/documentarian": "^0.5.0",
+        "zduo/documentarian": "dev-zduo-laravel9",
         "mpociot/reflection-docblock": "^1.0.1",
         "nunomaduro/collision": "^3.0|^4.0|^5.0|^6.0",
         "ramsey/uuid": "^3.8|^4.0",
