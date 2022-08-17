@@ -62,6 +62,7 @@ class UseResponseFileTag extends Strategy
             }
             $status = $result[1] ?: 200;
             $content = $result[2] ? file_get_contents($filePath, true) : '{}';
+            if (!$content) $content = '{}';
             $json = ! empty($result[3]) ? str_replace("'", '"', $result[3]) : '{}';
             $merged = array_merge(json_decode($content, true), json_decode($json, true));
 
